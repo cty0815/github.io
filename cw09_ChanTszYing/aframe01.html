@@ -9,7 +9,7 @@
 <body>
      <a-scene>
      <a-assets>
-        <img id="brick" src="img/01.jpg">
+        <img id="brick" src="img/labubu.jpg">
           
      </a-assets>
 
@@ -19,13 +19,13 @@ depth="0.5" height="0.5" width="0.5"></a-box>
     <a-entity geometry="primitive:box" rotation="-45 0 0" material="color:green" position="0.8 1 -10" scale="10 10 2"></a-entity>
            
             <a-text value="Chan Tsz Ying" position="0 2.2 -2" color="lightblue"></a-text>
-            <a-box id="cubrick" position="-0.5 3.0 -3.8" depth = "0.5" height="0.5" width="1"></a-box>
+            <a-box id="cubrick" position="-0.5 3.0 -3.8" depth = "1" height="1" width="1.5"></a-box>
              <a-sky color="#ffaaaa"></a-sky>
     </a-scene>
 <script>
 
  setTimeout((e) => {
- const texture = new window.THREE.TextureLoader().load('img/01.jpg');
+ const texture = new window.THREE.TextureLoader().load('img/zimomo.jpg');
  const material_tex = new THREE.MeshBasicMaterial({ map: texture });
  const box = document.querySelector('#cubrick');
  let mesh = box.getObject3D('mesh');
